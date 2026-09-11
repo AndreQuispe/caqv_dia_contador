@@ -28,14 +28,14 @@
 
           <div class="card-body">
             <div class="welcome-copy">
-              <p class="eyebrow">Para mi contadora favorita</p>
+              <p class="eyebrow">Para ti, amor</p>
               <h1 id="welcome-title">SISTEMA CONTABLE<br />DEL <span>AMOR <span class="heart" aria-hidden="true">❤️</span></span></h1>
-              <p class="intro">Hay cosas que no caben en una hoja de cálculo.<br class="desktop-break" /> Lo que siento por ti es una de ellas.</p>
+              <p class="intro">Karen, hay cosas que no caben en una hoja de cálculo.<br class="desktop-break" /> Lo que siento por ti es una de ellas.</p>
 
               <div class="fiscal-year">
                 <span>Ejercicio</span>
                 <strong>2025 <span class="year-dash">–</span> <span aria-label="infinito">∞</span></strong>
-                <small>Una historia sin fecha de cierre.</small>
+                <small id="days-since">Desde el 01.11.2025, contando cada día.</small>
               </div>
 
               <div id="start-panel">
@@ -46,13 +46,17 @@
             </div>
 
             <aside class="ledger" aria-label="Detalle del expediente">
-              <div class="ledger-heading"><span>REGISTRO ESPECIAL</span><span aria-hidden="true">↗</span></div>
-              <div class="ledger-symbol" aria-hidden="true">∞</div>
-              <p class="ledger-caption">Lo nuestro no tiene límite.</p>
+              <div class="ledger-heading"><span>FICHA DE LA AUDITORA</span><span aria-hidden="true">↗</span></div>
+              <div class="ledger-photo">
+                <img src="./assets/foto.jpg" alt="" id="ledger-photo-img" hidden />
+                <span class="ledger-photo-fallback" aria-hidden="true">K</span>
+              </div>
+              <p class="ledger-caption">Karen — Contadora Senior</p>
               <dl>
-                <div><dt>Cuenta</dt><dd>Tú + yo</dd></div>
-                <div><dt>Moneda</dt><dd>Momentos juntos</dd></div>
-                <div><dt>Estado</dt><dd><span class="account-status">En crecimiento</span></dd></div>
+                <div><dt>Cuenta</dt><dd>Karen + yo</dd></div>
+                <div><dt>Experiencia</dt><dd>+10 años</dd></div>
+                <div><dt>Sede</dt><dd>Lima · Cusco ♡</dd></div>
+                <div><dt>Estado</dt><dd><span class="account-status">Mi socia de vida</span></dd></div>
               </dl>
               <div class="ledger-footer"><span aria-hidden="true">♡</span> Cada detalle cuenta.</div>
             </aside>
@@ -68,13 +72,19 @@
               <div>
                 <p class="eyebrow">Las cifras de nuestra historia</p>
                 <h2 id="audit-title" tabindex="-1">Contigo, todo <span>suma.</span></h2>
-                <p class="intro">Revisé nuestras cuentas. Lo más valioso sigue siendo tenerte.</p>
+                <p class="intro">Karen, revisé nuestras cuentas con el rigor que tú misma usarías. Lo más valioso sigue siendo tenerte.</p>
               </div>
               <p class="period-label">Ejercicio <strong>2025 – ∞</strong></p>
             </div>
 
             <p class="metrics-hint" id="metrics-hint">Cada cifra tiene algo que decirte. Toca «Ver detalle» para descubrirlo.</p>
             <div class="metrics-grid" aria-describedby="metrics-hint">
+              <article class="metric-card">
+                <div class="metric-heading"><h3>Días juntos</h3><span aria-hidden="true">↗</span></div>
+                <p class="metric-value" id="days-value">…</p>
+                <p class="metric-caption">Desde el 01.11.2025</p>
+                <details><summary>Ver detalle</summary><p id="days-detail">Contando cada día desde que empezamos.</p></details>
+              </article>
               <article class="metric-card">
                 <div class="metric-heading"><h3>Amor recibido</h3><span aria-hidden="true">♡</span></div>
                 <p class="metric-value" aria-label="Infinito">∞</p>
@@ -87,27 +97,27 @@
                 <p class="metric-caption">Mi reserva más valiosa</p>
                 <details><summary>Ver detalle</summary><p>Gracias por quererme incluso cuando mis cuentas no cuadran. Tu paciencia merece su propia auditoría.</p></details>
               </article>
-              <article class="metric-card metric-card-rose">
+              <article class="metric-card metric-card-rose metric-span-3">
                 <div class="metric-heading"><h3>Besos pendientes</h3><span aria-hidden="true">↗</span></div>
                 <p class="metric-value">999</p>
                 <p class="metric-caption">Por pagar, con mucho gusto</p>
                 <details><summary>Ver detalle</summary><p>Reconozco esta deuda. Propongo pagarla en persona y aceptar los intereses que tú decidas.</p></details>
               </article>
-              <article class="metric-card">
-                <div class="metric-heading"><h3>Felicidad acumulada</h3><span aria-hidden="true">↗</span></div>
-                <p class="metric-value">+100<span class="metric-unit">%</span></p>
-                <p class="metric-caption">Desde que compartimos la vida</p>
-                <details><summary>Ver detalle</summary><p>Hasta un día cualquiera tiene ganancias extraordinarias cuando lo paso contigo.</p></details>
+              <article class="metric-card metric-span-3">
+                <div class="metric-heading"><h3>Experiencia en estados financieros</h3><span aria-hidden="true">📊</span></div>
+                <p class="metric-value">10+<span class="metric-unit"> años</span></p>
+                <p class="metric-caption">Una capa reconocida en su campo</p>
+                <details><summary>Ver detalle</summary><p>Más de una década haciendo que los números cuadren perfecto. Ojalá algún día se me pegue algo de tu orden. 😄</p></details>
               </article>
-              <article class="metric-card metric-card-featured">
-                <div class="metric-heading"><h3>Rentabilidad de la relación</h3><span aria-hidden="true">♡</span></div>
-                <p class="metric-value" aria-label="Infinito por ciento">∞<span class="metric-unit">%</span></p>
-                <p class="metric-caption">Mi mejor inversión: nosotros</p>
-                <details><summary>Ver detalle</summary><p>Si volviera al inicio, volvería a elegirte. Hay decisiones que valen toda una vida. ❤️</p></details>
+              <article class="metric-card metric-card-featured metric-span-6">
+                <div class="metric-heading"><h3>Nuestro futuro estudio contable</h3><span aria-hidden="true">♡</span></div>
+                <p class="metric-value metric-value-text">Próximamente</p>
+                <p class="metric-caption">Tú con los estados financieros, yo con la automatización y los dashboards</p>
+                <details><summary>Ver detalle</summary><p>Algún día vamos a abrir nuestro propio estudio contable: tú llevando la contabilidad como la profesional que eres, y yo construyendo la automatización y los dashboards para los clientes. El mejor equipo, dentro y fuera de la oficina. ❤️</p></details>
               </article>
             </div>
 
-            <div class="dashboard-note"><span aria-hidden="true">✓</span><p><strong>Primer hallazgo</strong>Hay mucha suerte detrás de estas cifras. La mía fue encontrarte.</p></div>
+            <div class="dashboard-note"><span aria-hidden="true">✓</span><p><strong>Primer hallazgo</strong>Hay mucha suerte detrás de estas cifras. La mía fue encontrarte. Y el próximo destino de esta auditoría es Cusco. ♡</p></div>
             <button class="text-button" id="restart-audit" type="button">Volver al inicio <span aria-hidden="true">↩</span></button>
           </div>
 
@@ -115,7 +125,7 @@
         </section>
       </main>
 
-      <footer class="site-footer"><span>Feliz Día del Contador en Perú</span><span>El mejor balance es estar contigo. <span aria-hidden="true">♡</span></span></footer>
+      <footer class="site-footer"><span>Feliz Día del Contador en Perú</span><span>El mejor balance es estar contigo, Karen. <span aria-hidden="true">♡</span></span></footer>
     </div>
   </body>
 </html>
